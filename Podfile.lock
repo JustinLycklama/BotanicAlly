@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.2.2)
+  - ClassicClient (0.1.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya-ObjectMapper (2.9):
+    - Moya-ObjectMapper/Core (= 2.9)
+  - Moya-ObjectMapper/Core (2.9):
+    - Moya (~> 14.0.0-beta.6)
+    - ObjectMapper
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (4.2.0)
+  - Result (5.0.0)
+
+DEPENDENCIES:
+  - ClassicClient (from `../ClassicClientiOS/`)
+  - Moya (~> 14.0)
+  - Moya-ObjectMapper (~> 2.9)
+  - Result (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Moya
+    - Moya-ObjectMapper
+    - ObjectMapper
+    - Result
+
+EXTERNAL SOURCES:
+  ClassicClient:
+    :path: "../ClassicClientiOS/"
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  ClassicClient: 99c67902d1722d0095675cb4ba08d4d80d22a3fa
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Moya-ObjectMapper: 967a99d9ea3aa9c93ddbe112aeca3667f53bfe93
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
+
+PODFILE CHECKSUM: 72226e3e88c73904d6caf47f42d372582a4f0804
+
+COCOAPODS: 1.9.3
