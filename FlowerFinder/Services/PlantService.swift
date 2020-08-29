@@ -9,9 +9,11 @@
 import Foundation
 import Moya
 
-class PlantService {
+class PlantService : Trefle {
     
     func test() {
+        
+        
     }
 
 }

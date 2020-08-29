@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    var entryViewController: ViewController?
+//    var entryViewController: PlantsSearchViewController?
 
     @available(iOS 13.0, *)
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,9 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-        entryViewController = ViewController()
-        
-        self.window?.rootViewController = entryViewController
+//        entryViewController = PlantsSearchViewController()
+//
+//        self.window?.rootViewController = entryViewController
         
 
         /// 1. Capture the scene
@@ -32,9 +32,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         /// 3. Create a view hierarchy programmatically
-        entryViewController = ViewController()
-        let navigation = UINavigationController(rootViewController: entryViewController!)
         
+        let entryViewController = PlantsSearchViewController()
+        let entryNavController = UINavigationController(rootViewController: entryViewController)
+        
+        
+        let navigation = FFTabBarController()
+        navigation.viewControllers = [entryNavController]
+                
         /// 4. Set the root view controller of the window with your view controller
         window.rootViewController = navigation
         

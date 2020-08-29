@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlantPreviewCell" customModule="FlowerFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="204" height="139"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="204" height="139"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlY-1C-QX1" customClass="PlantTitleView" customModule="FlowerFinder" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="204" height="48"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="ba6-qi-Bww"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simulator Screen Shot - iPhone 8 - 2020-08-26 at 12.58.00" translatesAutoresizingMaskIntoConstraints="NO" id="IaZ-6e-isI">
+                        <rect key="frame" x="8" y="48" width="188" height="83"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="IaZ-6e-isI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="0BJ-ke-gfY"/>
+                <constraint firstAttribute="trailing" secondItem="IaZ-6e-isI" secondAttribute="trailing" constant="8" id="ARf-8f-Zo2"/>
+                <constraint firstAttribute="bottom" secondItem="IaZ-6e-isI" secondAttribute="bottom" constant="8" id="UMa-3o-pYE"/>
+                <constraint firstAttribute="trailing" secondItem="IlY-1C-QX1" secondAttribute="trailing" id="bWd-zB-LQ4"/>
+                <constraint firstItem="IaZ-6e-isI" firstAttribute="top" secondItem="IlY-1C-QX1" secondAttribute="bottom" id="jRc-bo-IgX"/>
+                <constraint firstItem="IlY-1C-QX1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mED-ri-LTd"/>
+                <constraint firstItem="IlY-1C-QX1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rbb-Op-vPk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="204" height="139"/>
+            <connections>
+                <outlet property="imageView" destination="IaZ-6e-isI" id="1J9-F5-8Du"/>
+                <outlet property="titleLabel" destination="IlY-1C-QX1" id="gva-eM-RND"/>
+            </connections>
+            <point key="canvasLocation" x="249.27536231884059" y="135.60267857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Simulator Screen Shot - iPhone 8 - 2020-08-26 at 12.58.00" width="750" height="1334"/>
+    </resources>
+</document>

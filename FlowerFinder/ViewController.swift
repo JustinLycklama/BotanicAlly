@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import ClassicClient
 
-class ViewController: UIViewController {
+class PlantsSearchViewController: HorizontalItemPreviewViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()            
+        
+//        let gradientLayer = CAGradientLayer()
+//        gradientLayer.frame = self.view.bounds
+//        gradientLayer.colors = [UIColor.yellow.cgColor, UIColor.white.cgColor]
+//        self.view.layer.insertSublayer(gradientLayer, at: 0)
+        
+        
+        
         
         
         Trefle.request()
